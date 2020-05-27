@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+}
+
+.grid {
+  /* we are making our each box 20px x 20px which means we'll need our main grid height to be 20*20px thus 400 px and width to be 10*20px thus 200px*/
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+}
+
+/* Styling the divs within the grid */
+.grid div {
+  height: 20px;
+  width: 20px;
+
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+/* ***************************************** */
+.miniGrid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: coral
+}
+
+.miniGrid div {
+  height: 20px;
+  width: 20px;
+}
