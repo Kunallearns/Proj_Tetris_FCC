@@ -302,11 +302,11 @@ document.addEventListener("DOMContentLoaded", () => {
         row.forEach((item) => {
           squares[item].classList.remove("taken");
           squares[item].classList.remove("tetromino");
-          squares[item].style.backgroundColor = " "
+          squares[item].style.backgroundColor = " ";
         });
         const squaresRemoved = squares.splice(i, width);
-        squares = squaresRemoved.concat(squares);
-        squares.forEach((cell) => grid.appendChild(cell));
+        squares = squaresRemoved.concat(squares); // make the row complete
+        squares.forEach((cell) => grid.appendChild(cell)); // Add a line so the grid doesnt appear to shrink
       }
     }
   }
